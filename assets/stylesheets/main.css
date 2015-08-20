@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  Custom styles
+===----------===----------===----------===----------===----------===
+*/
+
+body {
+  background: #DDD;
+  font: 300 18px/24px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin-bottom: 22px;
+}
+
+a {
+  color: #fcc;
+  font-weight: 500;
+  font-style: italic;
+  text-decoration: none;
+}
+
+em {
+  font-style: italic;
+}
+
+q {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  Navigation
+===----------===----------===----------===----------===----------===
+*/
+
+.navigation ul {
+  font: bold 15px "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px;
+  padding: 0px;
+  text-transform: uppercase;
+  text-align: right;
+}
+.navigation li {
+  display: inline-block;
+}
+.navigation a {
+  background: #395870;
+  background: linear-gradient(#6990Bf, #495F80);
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+.navigation a:hover {
+  background: #516B90;
+  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
+}
+.navigation li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.navigation li:last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+Intro
+===----------===----------===----------===----------===----------===
+*/
+
+.intro {
+  float: left;
+  margin: 80px 30px 40px 30px;
+  padding: 100px 20px 20px 20px;
+  width: 400px;
+  background: rgba(0,0,0, .5);
+  border-radius: 4px;
+  border: 2px solid rgba(0,0,0, .3);
+}
+
+.intro p {
+  color: #fff;
+}
+
+.headshot img{
+  border-radius: 50%;
+  height: 200px;
+  margin: -200px 0;
+  vertical-align: top;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  iframe
+===----------===----------===----------===----------===----------===
+*/
+
+.iframe {
+  margin: 80px 0 0 80px;
+  float: left;
+  width: 700px;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  Gallery
+===----------===----------===----------===----------===----------===
+*/
+
+.gallery {
+  float: left;
+  margin: 80px 30px 40px 30px;
+  padding: 20px;
+  width: 530px;
+  background: rgba(0,0,0, .5);
+  border-radius: 4px;
+  border: 2px solid rgba(0,0,0, .3);
+}
+
+.thumbnail img{
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid rgba(100, 200, 100, .5);
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  Background image
+===----------===----------===----------===----------===----------===
+*/
+
+.bgphoto {
+  position: relative;
+  background-image: url("../images/andy-dick-and-friends.jpg");
+  margin: 80px 0 0 80px;
+  float: left;
+  width: 778px;
+  height: 518px;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  Social logos
+===----------===----------===----------===----------===----------===
+*/
+
+.social img{
+  border-radius: 50%;
+  height: 100px;
+  border: 5px solid rgba(200, 200, 255, .5);
+}
+
+.social img:hover {
+  border: 3px solid rgba(150, 150, 255, .5);
+}
+
+.top {
+  position: absolute;
+  top: -40px;
+}
+
+.right {
+  position: absolute;
+  right: -40px;
+}
+
+.bottom {
+  position: absolute;
+  bottom: -40px;
+}
+
+.left {
+  position: absolute;
+  left: -40px;
+}
+
+/*
+===----------===----------===----------===----------===----------===
+  Grid
+===----------===----------===----------===----------===----------===
+*/
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
